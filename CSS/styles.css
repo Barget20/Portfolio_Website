@@ -75,7 +75,7 @@ button:hover, button:focus {
 	background-color: var(--secondary-color);
 		color: var(--dark-grey-color);
 }
-
+/* How do I fix this? Says project-list is not a "display" value */
 .project-list {
 	display: project-list;
 	grid-template-columns: 300px 300px 300px;
