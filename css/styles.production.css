@@ -81,7 +81,7 @@ a:active {
   @extend %button-shared;
   background-color: $primary-color;
 }
-/* Does the following need to be in the button part above this? */
+
 button:hover, button:focus {
 	cursor: pointer;
 	opacity: 0.7;
