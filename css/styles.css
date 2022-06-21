@@ -1,7 +1,7 @@
 body {
 	font-family: 'noto serif', sans-serif;
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 20px;
 	line-height: 1.6;
 }
 :root {
@@ -14,13 +14,15 @@ a {
 	color:var(--primary-color);
 }
 h1 {
-	font-size: 30px;
+	font-size: 60px;
 	font-weight: 700;
+	color: white;
 }
 
 h2 {
 	font-size: 24px;
 	font-weight: 700;
+	color: white;
 }
 
 h3 {
@@ -28,18 +30,30 @@ h3 {
 	font-weight: 700;
 }
 
+p {
+	font-size: 18px;
+	font-weight: 700;
+	color: white;
+}
+
+li {
+	font-size: 18px;
+	font-weight: 700;
+	color: white;
+}
+
 a {
 	color: #4d94ff;
 }
 
 a:visited {
-	color: #05676e;
+	color: whitesmoke;
 }
 a:hover,a:focus {
 	text-decoration: none;
 }
 a:active {
-	color: #489c79;
+	color: #4483be;
 }
 *{
 	box-sizing: border-box;
@@ -57,6 +71,14 @@ a:active {
 	margin: 0 auto;
 }
 
+.work__portrait {
+	text-align: center;
+}
+
+.experience_portrait {
+	color: white;
+}
+
 button {
 	border: none;
 	font-family: inherit;
@@ -67,14 +89,14 @@ button {
 	border-radius: 3px;
 	border-bottom: 2px solid rgba (0,0,0,0.3);
 }
-button:hover, button:focus {
+/* button:hover, button:focus {
 	cursor: pointer;
 	opacity: 0.7;
 }
 .button__secondary {
 	background-color: var(--secondary-color);
 		color: var(--dark-grey-color);
-}
+} */
 
 .project-list {
 	display: project-list;
@@ -83,7 +105,7 @@ button:hover, button:focus {
 }
 
 .project-list__item {
-	background-color: lightgray;
+	background-color: #587B96;
 	display: inline-block;
 	width: 33%;
 }
@@ -110,16 +132,26 @@ button:hover, button:focus {
 }
 .navigation-list {
 	list-style-type: none;
+	
 }
 
 .navigation-list li {
 	display: inline-block;
 	margin-left: 15px;
+	
 }
 .navigation-list__item--active {
 	text-decoration: none;
+	
 }
 
+.standard-label {
+	color: white;
+}
+
+.contact-info {
+	color: white;
+}
 		
 .page-footer {
 	clear: both;
@@ -127,6 +159,9 @@ button:hover, button:focus {
 	display: flex; 
 	flex-direction: column;
 	justify-content: center;
+}
+.page_footer_portrait {
+	color: black;
 }
 
 .social-media__item {
@@ -159,21 +194,21 @@ button:hover, button:focus {
 	font-size: 22px;
 	}
 }
-button,
+/* button,
 .button1,
 .button2,
 .button3,
-.my-input
+.my-input */
 
-button:hover,
+/* button:hover,
 button:focus,
 .button:hover,
 .button:focus, {
 	cursor: pointer;
 	opacity: 0.8;
-}
+} */
 
-.button,button {
+/* .button,button {
 	border: none;
 	display: inline-block;
 	font-family: inherit;
@@ -185,7 +220,7 @@ button:focus,
 	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 	transition-duration: 0.9s;
 	transition-property: opacity;
-}
+} */
 
 @keyframes color-change {
 	0%{
