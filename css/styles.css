@@ -79,6 +79,10 @@ a:active {
 	color: white;
 }
 
+.footer_portrait {
+	text-decoration: none;
+}
+
 button {
 	border: none;
 	font-family: inherit;
@@ -105,13 +109,12 @@ button {
 }
 
 .project-list__item {
-	background-color: #587B96;
+	background-color: #334654;
 	display: inline-block;
-	width: 33%;
 }
 
 @supports (display: grid) {
-	.grid {
+	.project-list {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-gap: 20px;
@@ -172,28 +175,6 @@ button {
 	width: 60px;
 }
 
-@media all and (max-width: 500px) {
-	.grid {
-	grid-template-columns: 1fr;
-	}
-}
-@media all and (mid-width: 500px) and (max-width: 750px){
-	.grid {
-	grid-template-columns: 1fr 1fr;
-	}
-}
-@media all and (max-width: 750px) {
-	.grid {
-	grid-gap: 10px;
-	}
-	.grid__item:last-child {
-	grid-column: auto / auto;
-	grid-row: auto / auto;
-	}
-	h1 {
-	font-size: 22px;
-	}
-}
 /* button,
 .button1,
 .button2,
@@ -222,58 +203,6 @@ button:focus,
 	transition-property: opacity;
 } */
 
-@keyframes color-change {
-	0%{
-	fill: #edc655;
-	}
-	50% {
-	fill: #fcffad;
-	}
-	100% {
-	fill: #f76414;
-	}
-}
-
-.sun {
-	animation-duration: 4s;
-	animation-name: color-change;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
-	animation-timing-function: linear;
-}
-
-@keyframes cloud-move {
-	from {
-	transform: translate(0, 50px);
-	}
-	to {
-	transform: translate(200px, 50px);
-	}
-}
-
-.cloud-front {
-	animation-duration: 30s;
-	animation-name: cloud-move;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
-	animation-timing-function: linear;
-}
- @keyframes cloud-move-reverse {
- 	from {
- 	transform: translate(446px, 48px);
- 	}
- 	to {
- 	transform: translate(100px, 48px);
- 	}
- }
-
- .cloud-back {
- 	animation-duration: 34s;
- 	animation-name: cloud-move-reverse;
- 	animation-iteration-count: infinite;
- 	animation-direction: alternate;
- 	animation-timing-function: linear;
- }
 
 /*
 color usage
