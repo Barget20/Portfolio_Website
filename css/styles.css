@@ -59,6 +59,8 @@ a:active {
 	box-sizing: border-box;
 }
 
+
+
 .profile__portrait {
 	float: left;
 	width: 250px;
@@ -69,16 +71,26 @@ a:active {
 .profile {
 	max-width: 700px;
 	margin: 0 auto;
+	text-align: center;
+
+} 
+.about {
+	text-align: center;
 }
 
-.work__portrait {
+.experience_table {
+	color: white;
 	text-align: center;
 }
 
 .experience_portrait {
 	color: white;
+	text-align: center;
 }
 
+.work__portrait {
+	text-align: center;
+}
 .footer_portrait {
 	text-decoration: none;
 }
@@ -93,14 +105,6 @@ button {
 	border-radius: 3px;
 	border-bottom: 2px solid rgba (0,0,0,0.3);
 }
-/* button:hover, button:focus {
-	cursor: pointer;
-	opacity: 0.7;
-}
-.button__secondary {
-	background-color: var(--secondary-color);
-		color: var(--dark-grey-color);
-} */
 
 .project-list {
 	display: project-list;
@@ -109,7 +113,7 @@ button {
 }
 
 .project-list__item {
-	background-color: #334654;
+	/* background-color: #334654; */
 	display: inline-block;
 }
 
@@ -152,8 +156,13 @@ button {
 	color: white;
 }
 
-.contact-info {
+.contact_me {
 	color: white;
+	text-align: center;
+}
+.contact_info {
+	color: white;
+	text-align: center;
 }
 		
 .page-footer {
@@ -174,35 +183,6 @@ button {
 .nav_logo {
 	width: 60px;
 }
-
-/* button,
-.button1,
-.button2,
-.button3,
-.my-input */
-
-/* button:hover,
-button:focus,
-.button:hover,
-.button:focus, {
-	cursor: pointer;
-	opacity: 0.8;
-} */
-
-/* .button,button {
-	border: none;
-	display: inline-block;
-	font-family: inherit;
-	background-color: #357b70;
-	color: white;
-	text-decoration: none;
-	padding: 10px;
-	border-radius: 3px;
-	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-	transition-duration: 0.9s;
-	transition-property: opacity;
-} */
-
 
 /*
 color usage
