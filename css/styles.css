@@ -3,6 +3,7 @@ body {
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 1.6;
+	background-color: #415385;
 }
 :root {
 	--primary-color: #357b70;
@@ -87,22 +88,6 @@ a:active {
 	text-align: center;
 }
 
-
-td {
-	text-align: auto;
-	text-indent: 450px;
-	margin-left: auto;
-	margin-right: auto;
-	color: white;
-}
-th {
-	text-align: auto;
-	text-indent: 450px;
-	margin-left: auto;
-	margin-right: auto;
-	color: white;
-}
-
 .work__portrait {
 	text-align: center;
 }
@@ -124,7 +109,7 @@ button {
 .project-list {
 	display: project-list;
 	grid-template-columns: 300px 300px 300px;
-	grid-gap: 20px;
+	grid-gap: 25px;
 }
 
 .project-list__item {
@@ -135,8 +120,8 @@ button {
 @supports (display: grid) {
 	.project-list {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-gap: 20px;
+		grid-template-columns: 2fr 2fr 2fr;
+		grid-gap: 50px;
 		margin: 0;
 		}}
 
@@ -161,6 +146,13 @@ button {
 	margin-left: 15px;
 }
 .navigation-list__item--active {
+	text-decoration: none;
+}	
+
+.navigation-list__item_home {
+	text-decoration: none;
+}
+.navigation-list__item_home--active {
 	text-decoration: none;
 }
 
@@ -187,6 +179,11 @@ button {
 	display: flex; 
 	flex-direction: column;
 	justify-content: center;
+	position: sticky/fixed;
+	left: 0%;
+	bottom: 0;
+	width: 100%;
+	color: white;
 }
 .page_footer_portrait {
 	color: black;
