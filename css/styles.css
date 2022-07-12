@@ -21,9 +21,10 @@ h1 {
 }
 
 h2 {
-	font-size: 24px;
+	font-size: 28px;
 	font-weight: 700;
 	color: white;
+	text-align: center;
 }
 
 h3 {
@@ -108,22 +109,26 @@ button {
 
 .project-list {
 	display: project-list;
-	grid-template-columns: 300px 300px 300px;
-	grid-gap: 25px;
+	padding: 10px;
+	box-sizing: border-box;
+	/* grid-template-columns: 300px 300px 300px;
+	grid-gap: 25px; */
 }
 
 .project-list__item {
 	/* background-color: #334654; */
 	display: inline-block;
+	padding: 10px;
+	box-sizing: border-box;
 }
 
-@supports (display: grid) {
+/* @supports (display: grid) {
 	.project-list {
 		display: grid;
 		grid-template-columns: 2fr 2fr 2fr;
 		grid-gap: 50px;
 		margin: 0;
-		}}
+		}} */
 
 .page-header {
 	display: flex;
