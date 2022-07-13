@@ -21,7 +21,7 @@ h1 {
 }
 
 h2 {
-	font-size: 28px;
+	font-size: 32px;
 	font-weight: 700;
 	color: white;
 	text-align: center;
@@ -33,7 +33,7 @@ h3 {
 }
 
 p {
-	font-size: 18px;
+	font-size: 26px;
 	font-weight: 700;
 	color: white;
 }
@@ -90,6 +90,9 @@ a:active {
 .item .info {
 	display: flex;
 	gap: 1rem;
+}
+.text {
+	text-size-adjust: 20px;
 }
 
 .item .info .image img {
