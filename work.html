@@ -9,29 +9,71 @@
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="./css/styles.css">
 		<meta name="viewport" content="width=devicewidth, initial-scale=1">
+		<style>
+			body{
+				font-family: "Lato", sans-serif;
+				color: white;
+			}
+
+			.sidenav {
+				height: 100%;
+				width: 0;
+				position: fixed;
+				z-index: 1;
+				top: 0;
+				left: 0;
+				background-color: #111;
+				overflow-x: hidden;
+				transition: 0.5s;
+				padding-top: 60px;
+			}
+
+			.sidenav a {
+				padding: 8px 8px 8px 32px;
+				text-decoration: none;
+				font-size: large;
+				color: #818181;
+				display: block;
+				transition: 0.3s;
+			}
+
+			.sidenav a:hover {
+				color: #f1f1f1;
+			}
+
+			.sidenav .closebtn {
+				position: absolute;
+				top: 0;
+				right: 25px;
+				font-size: 36px;
+				margin-left: 50px;
+			}
+
+			@media screen and (max-height: 450px) {
+				.sidenav {padding-top: 15px;}
+				.sidenav a {font-size: 18px;}
+			}	
+		</style>
 	</head>
-
 	<body>
-		<header class="page-header"> 
 
-		<nav class="home-navigation page-header__item">
-			<ul role="menubar" class="navigation-list">
-				<li><a href="index.html" role="menuitem" class="navigation-list__item_home" id="Home">Home</a>
-				</li>	
-			</ul>
-		</nav>
-		<nav class="main-navigation page-header__item">
-			<ul role="menubar" class="navigation-list">
-				<li><a href="about.html" role="menuitem" class="navigation-list__item" id="About">About</a>
-				</li>
-				<li role="presentation">
-					<a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active" id="Work">Work</a>
-				</li>
-				<li><a href="contact.html" role="menuitem" class="navigation-list__item" id="Contact">Contact</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="index.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="work.html">Work</a>
+			<a href="contact.html">Contact</a>
+		</div>
+
+		<span style="font-size:35px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+		<script>
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "250px";
+			}
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+			}
+		</script>
 
 		
 		<div class="projects">
@@ -40,8 +82,8 @@
 			<div class="items">
 				<div class="item">
 				<div class="title">
-					<h2> <img src="img_/upcomingeventscalendar.png" width="40" height="40" 
-						alt="events_calendar"> Meet_App</h2>
+					<h2>  <img src="img_/upcomingeventscalendar.png" width="40" height="40" 
+						alt="events_calendar"> <u>Meet_App</u></h2>
 				</div>
 				<div class="info">
 					<div class="image">
@@ -59,7 +101,7 @@
 			<div class="item">
 				<div class="title">
 					<h2> <img src="img_/pokeball.png" width="40" height="40" 
-						alt="pokeball"> JavaScript_App</h2>
+						alt="pokeball"> <u>JavaScript_App</u></h2>
 				</div>
 				<div class="info">
 					<div class="image">
@@ -76,7 +118,7 @@
 			<div class="item">
 				<div class="title">
 					<h2> <img src="img_/filmprojector.png" width="40" height="40" 
-						alt="film_projector"> MyAngular-client</h2>
+						alt="film_projector"> <u>MyAngular-client</u></h2>
 				</div>
 				<div class="info">
 					<div class="image">

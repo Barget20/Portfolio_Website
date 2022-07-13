@@ -9,47 +9,80 @@
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="./css/styles.css">
 		<meta name="viewport" content="width=devicewidth, initial-scale=1">
+
+		<style>
+			body{
+				font-family: "Lato", sans-serif;
+				color: white;
+			}
+
+			.sidenav {
+				height: 100%;
+				width: 0;
+				position: fixed;
+				z-index: 1;
+				top: 0;
+				left: 0;
+				background-color: #111;
+				overflow-x: hidden;
+				transition: 0.5s;
+				padding-top: 60px;
+			}
+
+			.sidenav a {
+				padding: 8px 8px 8px 32px;
+				text-decoration: none;
+				font-size: large;
+				color: #818181;
+				display: block;
+				transition: 0.3s;
+			}
+
+			.sidenav a:hover {
+				color: #f1f1f1;
+			}
+
+			.sidenav .closebtn {
+				position: absolute;
+				top: 0;
+				right: 25px;
+				font-size: 36px;
+				margin-left: 50px;
+			}
+
+			@media screen and (max-height: 450px) {
+				.sidenav {padding-top: 15px;}
+				.sidenav a {font-size: 18px;}
+			}	
+		</style>
 	</head>
-
 	<body>
-		<header class="page-header"> 
-		<nav class="home-navigation page-header__item">
-			<ul role="menubar" class="navigation-list">
-				<li><a href="index.html" role="menuitem" class="navigation-list__item_home--active" id="Home">Home</a>
-				</li>	
-			</ul>
-		</nav>
 
-		<nav class="main-navigation page-header__item">
-			<ul role="menubar" class="navigation-list">
-				<li><a href="about.html" role="menuitem" class="navigation-list__item" id="About">About</a>
-				</li>
-				<li><a href="work.html" role="menuitem" class="navigation-list__item" id="Work">Work</a>
-				</li>
-				<li><a href="contact.html" role="menuitem" class="navigation-list__item" id="Contact">Contact</a>
-				</li>
-			</ul>
-		</nav>
-		
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="index.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="work.html">Work</a>
+			<a href="contact.html">Contact</a>
+		</div>
+
+		<span style="font-size:35px;cursor:pointer" text-color="white" onclick="openNav()">&#9776; Menu</span>
+		<script>
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "250px";
+			}
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+			}
+		</script>
+
 		</header>
 		<div class="profile">
 			<img src="./img_/coach_graffiti_logo.png" class="profile__portrait" alt="My profile Image">
 			<h1>"My Portfolio"</h1>
 			<p> My name is Brian Argetsinger. I am a full stack <span>web</span> developer from Chattanooga, TN.
 			</p>
-		</div>
-		<!-- <div id="background layer" style="
-			position:absolute;
-			width: 75vw;
-			height: 80vh;
-			background-color: rgba(0,0,0,0.5);
-			z-index: -1;
-			top: 55%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			backdrop-filter: blur(1);		
-		"></div> -->
-		
+		</div>	
 
 	<footer class="page-footer">
 		<div class="page_footer_portrait">
