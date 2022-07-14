@@ -1,0 +1,172 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+		<link rel= "shortcut icon" href="./img_/coach_logo_with_border.png" type="image/png"> 
+		<meta charset="utf-8">
+		<title>My Portfolio - Pokedex Case Study</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="./css/styles.css">
+		<meta name="viewport" content="width=devicewidth, initial-scale=1">
+		<style>
+			body{
+				font-family: "Lato", sans-serif;
+				color: white;
+			}
+
+			.sidenav {
+				height: 100%;
+				width: 0;
+				position: fixed;
+				z-index: 1;
+				top: 0;
+				left: 0;
+				background-color: #111;
+				overflow-x: hidden;
+				transition: 0.5s;
+				padding-top: 60px;
+			}
+
+			.sidenav a {
+				padding: 8px 8px 8px 32px;
+				text-decoration: none;
+				font-size: large;
+				color: #818181;
+				display: block;
+				transition: 0.3s;
+			}
+
+			.sidenav a:hover {
+				color: #f1f1f1;
+			}
+
+			.sidenav .closebtn {
+				position: absolute;
+				top: 0;
+				right: 25px;
+				font-size: 36px;
+				margin-left: 50px;
+			}
+
+			@media screen and (max-height: 450px) {
+				.sidenav {padding-top: 15px;}
+				.sidenav a {font-size: 18px;}
+			}	
+		</style>
+	</head>
+
+    <body>
+        <div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="index.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="work.html">Work</a>
+			<a href="contact.html">Contact</a>
+		</div>
+
+		<span style="font-size:35px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+		<script>
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "250px";
+			}
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+			}
+		</script>
+
+    <div class="casestudy">
+            <h1>Pokedex Case Study</h1>
+      
+        <div class="screenshot">
+                <img src="img_/Pokedex_Image_CS.png" alt="Pokedex Webpage">
+        </div>
+    
+        <div class="text">
+            <h2><u>Overview:</u></h2>
+            <p>The JavaScript App was built to create a Pokedex full of Pokémon. It was integrated <br>
+                with an already existing Pokémon database. Each Pokémon that you select you can see <br>
+                the name, image, height, weight, and type. 
+            </p>
+
+            <h2><u>Purpose & Context:</u></h2>
+            <p>This was a task that was a part of my web development course. I was introduced to features <br>
+                such as modals, buttons, and grids. I also was introduced to jQuery and Bootstrap. I <br>
+                further advanced my experience with stylings through CSS. 
+            </p>
+            
+            <h2><u>Objective</u></h2>
+            <p>The objective was to build a fully functional app that would allow users to browse through <br>
+                Pokémon characters and receive their information. The aims of this project were to use a <br>
+                pre-existing database and integrate it this project.
+            </p>
+
+        <div class="screenshot2">
+                <img src="img_/Pokedex_pokemon_imageCS.png" alt="Open Pokemon">
+        </div>
+
+        <div class="text">
+            <h2><u>Duration:</u></h2>
+            <p>This project took 6-7 week for full completion. This includes a few styling additions and <br>
+                issues. A few features were removed as well after trial and errors and not being necessary.
+            </p>
+            <h2><u>Credit:</u></h2>
+            <p>Role: Lead Developer <br>
+                Mentor: Andrew Mercer 
+            </p>
+        </div>
+
+        <div class="text">
+            <h2><u>"The How"</u></h2>
+            <p>-An index.html file was created for our common webpage information. <br>
+                -scripts.js was created to test out our Pokémon features (button) and manual information <br>
+                (inserted height, weight, etc) by using functions and promises. This was to see how the <br>
+                project was looking and if it was functioning properly. <br> 
+                -A Pokémon database was given to use. This was then implemented into the project by defining <br>
+                it as apiUrl. Essentially just linking a database into the webpage we are building.
+            </p>
+
+        <div class="screenshot3">
+                <img src="img_/Pokedex_Scripts_CS.png" alt="Script.js lines 1-35">
+        </div>
+
+        <div class="text">
+            <p>-The parameters we wanted to show off from this API were defined. In this case the name of the <br>
+                Pokémon, an image, its height, weight, and class type. This was defined under the functions <br>
+                loadList and loadDetails.
+            </p>
+        </div>
+
+        <div class="screenshot4">
+                <img src="img_/Pokedex_Scripts2_CS.png" alt="scripts.js lines 39-76">
+        </div>
+
+        <div class="text">
+            <p>-After everything was implemented and working properly it just needed to spice it up a bit. <br>
+                In styles.css how the buttons and the list looked were defined.</p>
+
+            <h2><u>"Challenges"</u></h2>
+            <p>The major challenges for this project were integrating a database into a project for the first <br>
+                time while also trying to style the layout around it. It took some time to lose the bullet points <br>
+                and structuring the page layout with grids. I also couldn’t quite get the search function to work <br>
+                either. It wasn’t required and got scrapped. In the future I would like to go back and implement this.<br>
+                Overall with help from my mentor we made this project fully functional.  
+            </p>
+        </div>
+
+        </div>
+    </div>
+    </div>
+
+    <footer class="page-footer">
+        <p> Find me on </p>
+        <div class="social-media">
+            <a href="https://github.com/Barget20" target="_blank" class="footer_portrait"><img src="./img_/icons8-github-200.svg" class="social-media__item" alt="Github"></a>
+            <a href="https://twitter.com/TheCoachIs_BA" target="_blank" class="footer_portrait"><img src="./img_/icons8-twitter.svg" class="social-media__item" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/in/brian-argetsinger-66165012/" target="_blank" class="footer_portrait"><img src="./img_/icons8-linkedin.svg" class="social-media__item" alt="LinkedIn"></a>
+        </div>
+    </footer>
+<script src="js/tota11y.min.js"></script>
+</body>
+
+</html>

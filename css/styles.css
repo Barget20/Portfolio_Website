@@ -120,6 +120,9 @@ a:active {
 .about {
 	text-align: center;
 }
+.casestudy {
+	text-align: center;
+}
 
 .work__portrait {
 	text-align: center;
@@ -138,6 +141,42 @@ button {
 	border-radius: 3px;
 	border-bottom: 2px solid rgba (0,0,0,0.3);
 }
+
+button:hover, button:focus {
+	cursor: pointer;
+	opacity: 0.7;
+}
+.button__secondary {
+	background-color: var(--secondary-color);
+		color: var(--dark-grey-color);
+}		
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.button,button {
+	border: none;
+	display: inline-block;
+	font-family: inherit;
+	background-color: #5e83ba;
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 3px;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+	transition-duration: 0.9s;
+	transition-property: opacity;
+}
+
+.resume {
+	text-align: center;
+}
+
 
 /* .project-list {
 	display: project-list;
