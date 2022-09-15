@@ -91,6 +91,12 @@ a:active {
 	display: flex;
 	gap: 1rem;
 }
+
+.item .image {
+	display: flex;
+	align-items: center;
+
+}
 .text {
 	text-size-adjust: 20px;
 }
@@ -176,7 +182,6 @@ button:focus,
 .resume {
 	text-align: center;
 }
-
 
 /* .project-list {
 	display: project-list;
