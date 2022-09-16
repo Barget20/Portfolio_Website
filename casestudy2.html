@@ -1,0 +1,177 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+		<link rel= "shortcut icon" href="./img_/Logo draft-v2.png" type="image/png"> 
+		<meta charset="utf-8">
+		<title>My Portfolio - Holiday Soundboard Case Study</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="./css/styles.css">
+		<meta name="viewport" content="width=devicewidth, initial-scale=1">
+		<style>
+			body{
+				font-family: "Lato", sans-serif;
+				color: white;
+			}
+
+			.sidenav {
+				height: 100%;
+				width: 0;
+				position: fixed;
+				z-index: 1;
+				top: 0;
+				left: 0;
+				background-color: #111;
+				overflow-x: hidden;
+				transition: 0.5s;
+				padding-top: 60px;
+			}
+
+			.sidenav a {
+				padding: 8px 8px 8px 32px;
+				text-decoration: none;
+				font-size: large;
+				color: #818181;
+				display: block;
+				transition: 0.3s;
+			}
+
+			.sidenav a:hover {
+				color: #f1f1f1;
+			}
+
+			.sidenav .closebtn {
+				position: absolute;
+				top: 0;
+				right: 25px;
+				font-size: 36px;
+				margin-left: 50px;
+			}
+
+			@media screen and (max-height: 450px) {
+				.sidenav {padding-top: 15px;}
+				.sidenav a {font-size: 18px;}
+			}	
+		</style>
+	</head>
+
+    <body>
+        <div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="index.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="work.html">Work</a>
+			<a href="contact.html">Contact</a>
+		</div>
+
+		<span style="font-size:35px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+		<script>
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "250px";
+			}
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+			}
+		</script>
+
+    <div class="casestudy">
+            <h1>Holiday Soundboard Case Study</h1>
+      
+        <div class="text">
+        <h2><u>Overview:</u></h2>
+            <p>The Holiday Soundboard was built to create a variety of holiday sound bites by using a <br>
+                javascript drumkit. I also included an extra webpage for kid sounds that a parent may utilize. <br>
+                Currently this only works on a computer and not on mobile. 
+            </p>
+        <div class="screenshot">
+                <img src="img_/halloweenSoundboard.png" alt="halloween homepage">
+        </div>
+            
+        <div class="text">
+            <h2><u>Purpose & Context:</u></h2>
+            <p>I was looking to create a new project that was simple and easy enough to digest for viewers. <br>
+                I also was looking to learn new features I hadn't used before. This was my first time using <br>
+                a drumkit with colored animation. After building up the Halloween sample page I realized I <br>
+                could use this type of website to be used as a Streamdeck replacement that a streamer or <br>
+                content creator could use.  
+            </p>
+            
+            <h2><u>Objective</u></h2>
+            <p>The objective was to build a fully functional website that could be used as a simple Streamdeck <br>
+                replacement. A Streamdeck being a piece of hardware that streamers push to play certain sound <br>
+                clips or video clips while they are streaming. Therefore each button that you push that is on the <br>
+                soundboard will play a sound bite. In this case each profile is based on different holidays <br>
+                and a kid friendly page. 
+            </p>
+        </div>
+
+        <div class="screenshot">
+                <img src="img_/kidsSoundboard.png" alt="kids homepage">
+        </div>
+
+        <div class="text">
+            <h2><u>Duration:</u></h2>
+            <p>This project took 1-2 weeks for full completion. This includes a few styling adjustments <br>
+                such as editing the colors of the animations behind the keys and proper text sizing. <br>
+                I also had to search for sound clips, edit them down, and then host the site online to use. <br> 
+            </p>
+            <h2><u>Credit:</u></h2>
+            <p>Role: Lead Developer <br>
+            </p>
+        </div>
+
+        <div class="text">
+            <h2><u>"The How"</u></h2>
+            <p>-An index.html file was created for our common webpage information. Initially only one soundboard <br>
+                page was going to be created. Instead of creating multiple sites, it made more sense to create <br>
+                multiple webpages/profiles. 
+               
+            </p>
+
+        <div class="screenshot">
+                <img src="img_/christmasSoundboard.png" alt="christmas homepage">
+        </div>
+
+        <div class="text">
+            <p>-The heart of this project is matching the keys on the keyboard with the proper audio. To do this <br>
+                we needed to create a working script to indicate that when I hit a data-key (A) that the matching <br>
+                audio plays once it is hit ("Christmas Spirit" on Christmas). 
+            </p>
+        </div>
+
+        <div class="screenshot">
+                <img src="img_/soundLines81_118.png" alt="data key coding screenshot">
+                <img src="img_/soundLines124_157.png" alt="data key scripts">
+        </div>
+
+        <div class="text">
+            <p>-After everything was implemented and working properly it just needed to be spiced up a bit. <br>
+                In styles.css I chose the colors for each webpage. The holiday text, the menubar colors change, <br>
+                and the animation colors around the keys change. 
+            </p>
+
+            <h2><u>"Challenges"</u></h2>
+            <p>The major challenges for this project was having to define each holiday characteristics with CSS. <br>
+                I also had to decide to find shorter audio clips (or edit them down) because I couldn't find a fix for <br>
+                double clicking to stop audio. I also know this does not work on mobile without a keypad. These are <br>
+                a few things I will try to figure out in the future. 
+            </p>
+        </div>
+
+        </div>
+    </div>
+    </div>
+
+    <footer class="page-footer">
+        <p> Find me on </p>
+        <div class="social-media">
+            <a href="https://github.com/Barget20" target="_blank" class="footer_portrait"><img src="./img_/icons8-github-200.svg" class="social-media__item" alt="Github"></a>
+            <a href="https://twitter.com/TheCoachIs_BA" target="_blank" class="footer_portrait"><img src="./img_/icons8-twitter.svg" class="social-media__item" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/in/brian-argetsinger-66165012/" target="_blank" class="footer_portrait"><img src="./img_/icons8-linkedin.svg" class="social-media__item" alt="LinkedIn"></a>
+        </div>
+    </footer>
+<script src="js/tota11y.min.js"></script>
+</body>
+
+</html>
